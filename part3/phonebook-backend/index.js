@@ -9,6 +9,9 @@ app.use(cors())
 // json-parser to implement POST requests
 app.use(express.json())
 
+// Use static build files
+app.use(express.static('build'))
+
 // app.use(morgan('tiny'))
 morgan.token('body', (request, _response) => {
   return request.method === 'POST'
