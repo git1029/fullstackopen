@@ -1,6 +1,10 @@
 const express = require('express')
 const morgan = require('morgan')
+const cors = require('cors')
 const app = express()
+
+// Allow cross-origin resource sharing
+app.use(cors())
 
 // json-parser to implement POST requests
 app.use(express.json())
