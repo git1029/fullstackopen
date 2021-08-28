@@ -71,8 +71,8 @@ ___
 
 #### Node
 * [Node.js](https://nodejs.org/en/)
-* [Node - http](https://nodejs.org/docs/latest-v8.x/api/http.html)
-* [Node - process.argv](https://nodejs.org/docs/latest-v8.x/api/process.html#process_process_argv)
+  * [http](https://nodejs.org/docs/latest-v8.x/api/http.html)
+  * [process.argv](https://nodejs.org/docs/latest-v8.x/api/process.html#process_process_argv)
 * [nodemon](https://github.com/remy/nodemon)
 
 #### Express
@@ -95,7 +95,7 @@ ___
 * [Document Databases](https://en.wikipedia.org/wiki/Document-oriented_database)
 * [NoSQL](https://en.wikipedia.org/wiki/NoSQL)
 * [MongoDB](https://www.mongodb.com)
-* [MongoDB - Collections](https://docs.mongodb.com/manual/core/databases-and-collections/)
-* [MongoDB - Documents](https://docs.mongodb.com/manual/core/document/)
+  * [Collections](https://docs.mongodb.com/manual/core/databases-and-collections/)
+  * [Documents](https://docs.mongodb.com/manual/core/document/)
 * [Mongoose](http://mongoosejs.com/index.html)
-* [Mongoose - Schemas](https://mongoosejs.com/docs/guide.html)
+  * [Schemas](https://mongoosejs.com/docs/guide.html)
