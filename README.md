@@ -71,7 +71,8 @@ ___
 
 #### Node
 * [Node.js](https://nodejs.org/en/)
-* [http - Node](https://nodejs.org/docs/latest-v8.x/api/http.html)
+* [Node - http](https://nodejs.org/docs/latest-v8.x/api/http.html)
+* [Node - process.argv](https://nodejs.org/docs/latest-v8.x/api/process.html#process_process_argv)
 * [nodemon](https://github.com/remy/nodemon)
 
 #### Express
@@ -89,3 +90,12 @@ ___
 #### HTTP
 * [HTTP response status codes - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 * [HTTP Standards](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html)
+
+#### Databases
+* [Document Databases](https://en.wikipedia.org/wiki/Document-oriented_database)
+* [NoSQL](https://en.wikipedia.org/wiki/NoSQL)
+* [MongoDB](https://www.mongodb.com)
+* [MongoDB - Collections](https://docs.mongodb.com/manual/core/databases-and-collections/)
+* [MongoDB - Documents](https://docs.mongodb.com/manual/core/document/)
+* [Mongoose](http://mongoosejs.com/index.html)
+* [Mongoose - Schemas](https://mongoosejs.com/docs/guide.html)
