@@ -74,9 +74,11 @@ ___
   * [http](https://nodejs.org/docs/latest-v8.x/api/http.html)
   * [process.argv](https://nodejs.org/docs/latest-v8.x/api/process.html#process_process_argv)
 * [nodemon](https://github.com/remy/nodemon)
+* [dotenv](https://www.npmjs.com/package/dotenv)
 
 #### Express
 * [Express](http://expressjs.com)
+  * [Error Handling](https://expressjs.com/en/guide/error-handling.html)
 
 #### Versioning
 * [About semantic versioning](https://docs.npmjs.com/about-semantic-versioning)
@@ -99,3 +101,4 @@ ___
   * [Documents](https://docs.mongodb.com/manual/core/document/)
 * [Mongoose](http://mongoosejs.com/index.html)
   * [Schemas](https://mongoosejs.com/docs/guide.html)
+  * [Queries](https://mongoosejs.com/docs/queries.html)
