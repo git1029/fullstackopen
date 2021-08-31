@@ -102,3 +102,5 @@ ___
 * [Mongoose](http://mongoosejs.com/index.html)
   * [Schemas](https://mongoosejs.com/docs/guide.html)
   * [Queries](https://mongoosejs.com/docs/queries.html)
+  * [Validation](https://mongoosejs.com/docs/validation.html)
+  * [Unique Validator](https://github.com/blakehaswell/mongoose-unique-validator)

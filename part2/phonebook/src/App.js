@@ -62,14 +62,34 @@ const App = () => {
           }, 5000)
         })
         .catch(error => {          
-          setMessage({
-            type: 'error',
-            text: `Information for for ${updatedPerson.name} has already been removed from server`
-          })
-          setTimeout(() => {
-            setMessage(null)
-          }, 5000)
-          setPersons(persons.filter(p => p.id !== person.id))
+          if (error.response.status === 400) {
+            setMessage({
+              type: 'error',
+              text: error.response.data.error
+            })
+            setTimeout(() => {
+              setMessage(null)
+            }, 5000)
+          }
+          else if (error.response.status === 404) {
+            setMessage({
+              type: 'error',
+              text: `Information for for ${updatedPerson.name} has already been removed from server`
+            })
+            setTimeout(() => {
+              setMessage(null)
+            }, 5000)
+            setPersons(persons.filter(p => p.id !== person.id))
+          }
+          else {
+            setMessage({
+              type: 'error',
+              text: 'Oops, something went wrong'
+            })
+            setTimeout(() => {
+              setMessage(null)
+            }, 5000)
+          }
         })
     }
 
@@ -83,6 +103,15 @@ const App = () => {
         setMessage({
           type: 'success',
           text: `Added ${returnedPerson.name}`
+        })
+        setTimeout(() => {
+          setMessage(null)
+        }, 5000)
+      })
+      .catch(error => {
+        setMessage({
+          type: 'error',
+          text: error.response.data.error
         })
         setTimeout(() => {
           setMessage(null)
