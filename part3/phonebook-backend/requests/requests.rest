@@ -26,6 +26,16 @@ Content-Type: application/json
   "name": "Eve Smith"
 }
 
+### Create duplicate entry
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Anna",
+  "number": "111-111-111"
+}
+
+
 ###
 POST http://localhost:3001/api/persons
 Content-Type: application/json
