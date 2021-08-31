@@ -10,7 +10,8 @@
     "build:ui": "rm -rf build && cd ../../part2/phonebook/ && npm run build --prod && cp -r build ../../part3/phonebook-backend",
     "deploy": "cd ../.. && git subtree push --prefix part3/phonebook-backend heroku main && cd part3/phonebook-backend",
     "deploy:full": "npm run build:ui && git add . && git commit -m phonebook-uibuild && git push && npm run deploy",
-    "logs:prod": "heroku logs --tail"
+    "logs:prod": "heroku logs --tail",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
     "nodemon": "^2.0.12"
   }
 }

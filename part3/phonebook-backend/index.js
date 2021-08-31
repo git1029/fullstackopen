@@ -15,7 +15,7 @@ app.use(express.json())
 // app.use(cors())
 
 // app.use(morgan('tiny'))
-morgan.token('body', (request, _response) => {
+morgan.token('body', (request) => {
   return request.method === 'POST'
     ? JSON.stringify(request.body)
     : ''
@@ -96,8 +96,8 @@ app.put('/api/persons/:id', (request, response, next) => {
     number: body.number
   }
 
-  const options = { 
-    runValidators: true, 
+  const options = {
+    runValidators: true,
     context: 'query',
     new: true
   }
@@ -137,6 +137,7 @@ const errorHandler = (error, _request, response, next) => {
 
 app.use(errorHandler)
 
+// eslint-disable-next-line no-undef
 const PORT = process.env.PORT
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)

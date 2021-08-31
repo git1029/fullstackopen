@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const mongoose = require('mongoose')
 
 if (process.argv.length !== 3 && process.argv.length !== 5) {
@@ -10,11 +11,11 @@ const password = process.argv[2]
 const url =
   `mongodb+srv://fullstack:${password}@cluster0.ekggb.mongodb.net/phonebook-app?retryWrites=true&w=majority`
 
-mongoose.connect(url, { 
-  useNewUrlParser: true, 
-  useUnifiedTopology: true, 
-  useFindAndModify: false, 
-  useCreateIndex: true 
+mongoose.connect(url, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true
 })
   .then(() => console.log('connected to MongoDB'))
 

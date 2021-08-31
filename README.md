@@ -104,3 +104,10 @@ ___
   * [Queries](https://mongoosejs.com/docs/queries.html)
   * [Validation](https://mongoosejs.com/docs/validation.html)
   * [Unique Validator](https://github.com/blakehaswell/mongoose-unique-validator)
+
+  #### Lint
+  * [Lint](https://en.wikipedia.org/wiki/Lint_(software))
+  * [ESLint](https://eslint.org)
+    * [ESLint plugin - VSC](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+    * [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+  * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
