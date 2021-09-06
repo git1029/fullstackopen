@@ -1,0 +1,12 @@
+### Get all blog posts
+GET http://localhost:3003/api/blogs
+
+### Create blog post
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "author": "Arno Vainune",
+  "url": "http://localhost:3003/api/blogs",
+  "votes": 2
+}
