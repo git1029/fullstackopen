@@ -111,3 +111,12 @@ ___
   * [ESLint plugin - VSC](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   * [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+
+##### Testing
+* [Jest](https://jestjs.io)
+  * [expect](https://jestjs.io/docs/expect#expectvalue)
+  * [toBe](https://jestjs.io/docs/expect#tobevalue)
+  * [only](https://jestjs.io/docs/api#testonlyname-fn-timeout)
+
+##### Lodash
+* [Lodash](https://lodash.com)
