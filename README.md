@@ -69,31 +69,31 @@ ___
 * [Cross-origin resource sharing - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 * [Same-origin policy - MDN](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
 
-#### Node
+##### Node
 * [Node.js](https://nodejs.org/en/)
   * [http](https://nodejs.org/docs/latest-v8.x/api/http.html)
   * [process.argv](https://nodejs.org/docs/latest-v8.x/api/process.html#process_process_argv)
 * [nodemon](https://github.com/remy/nodemon)
 * [dotenv](https://www.npmjs.com/package/dotenv)
 
-#### Express
+##### Express
 * [Express](http://expressjs.com)
   * [Error Handling](https://expressjs.com/en/guide/error-handling.html)
 
-#### Versioning
+##### Versioning
 * [About semantic versioning](https://docs.npmjs.com/about-semantic-versioning)
 
-#### REST
+##### REST
 * [REST Applied to Web Services](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services)
 * [CRUD - Create, Read, Update, Delete](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
 * [Content Types - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 * [VSCode REST Client](https://github.com/Huachao/vscode-restclient/blob/master/README.md#usage)
 
-#### HTTP
+##### HTTP
 * [HTTP response status codes - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 * [HTTP Standards](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html)
 
-#### Databases
+##### Databases
 * [Document Databases](https://en.wikipedia.org/wiki/Document-oriented_database)
 * [NoSQL](https://en.wikipedia.org/wiki/NoSQL)
 * [MongoDB](https://www.mongodb.com)
@@ -105,9 +105,9 @@ ___
   * [Validation](https://mongoosejs.com/docs/validation.html)
   * [Unique Validator](https://github.com/blakehaswell/mongoose-unique-validator)
 
-  #### Lint
-  * [Lint](https://en.wikipedia.org/wiki/Lint_(software))
-  * [ESLint](https://eslint.org)
-    * [ESLint plugin - VSC](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-    * [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
-  * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+##### Lint
+* [Lint](https://en.wikipedia.org/wiki/Lint_(software))
+* [ESLint](https://eslint.org)
+  * [ESLint plugin - VSC](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  * [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
