@@ -64,6 +64,12 @@ ___
 ##### Promises
 * [Promises chaining](https://javascript.info/promise-chaining)
 * [YDKJS: Async and Performance](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch3.md)
+* [Callback Hell](http://callbackhell.com)
+* [async - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+* [await - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
+* [Generator function*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+* [express-async-errors](https://github.com/davidbanham/express-async-errors)
+* [Promise.all() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
 
 ##### CORS
 * [Cross-origin resource sharing - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
@@ -104,6 +110,7 @@ ___
   * [Queries](https://mongoosejs.com/docs/queries.html)
   * [Validation](https://mongoosejs.com/docs/validation.html)
   * [Unique Validator](https://github.com/blakehaswell/mongoose-unique-validator)
+  * [insertMany](https://mongoosejs.com/docs/api.html#model_Model.insertMany)
 
 ##### Lint
 * [Lint](https://en.wikipedia.org/wiki/Lint_(software))
@@ -113,10 +120,21 @@ ___
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 ##### Testing
+* [Unit testing](https://en.wikipedia.org/wiki/Unit_testing)
+* [Integration testing](https://en.wikipedia.org/wiki/Integration_testing)
+* [Regression testing](https://en.wikipedia.org/wiki/Regression_testing)
 * [Jest](https://jestjs.io)
   * [expect](https://jestjs.io/docs/expect#expectvalue)
   * [toBe](https://jestjs.io/docs/expect#tobevalue)
   * [only](https://jestjs.io/docs/api#testonlyname-fn-timeout)
+  * [runInBand](https://jestjs.io/docs/cli#--runinband)
+  * [afterAll](https://jestjs.io/docs/api#afterallfn-timeout)
+  * [toContain](https://jestjs.io/docs/expect#tocontainitem)
+  * [toBeDefined](https://jestjs.io/docs/expect#tobedefined)
+* [supertest - npm](https://github.com/visionmedia/supertest) 
 
 ##### Lodash
 * [Lodash](https://lodash.com)
+
+##### RegEx
+* [RegEx - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
