@@ -10,6 +10,7 @@ ___
 * [You Don't Know JS Yet (book series) - 2nd Edition](https://github.com/getify/You-Dont-Know-JS)
 * [The Modern JavaScript Tutorial](https://javascript.info)
 * [JavaScript - egghead.io](https://egghead.io/q/javascript)
+* [throw - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
 
 ##### Variables
 * [Javascript variables; should you use let, var or const?](https://medium.com/podiihq/javascript-variables-should-you-use-let-var-or-const-394f7645c88f)
@@ -78,6 +79,7 @@ ___
 ##### Node
 * [Node.js](https://nodejs.org/en/)
   * [http](https://nodejs.org/docs/latest-v8.x/api/http.html)
+  * [https](https://nodejs.org/api/https.html)
   * [process.argv](https://nodejs.org/docs/latest-v8.x/api/process.html#process_process_argv)
 * [nodemon](https://github.com/remy/nodemon)
 * [dotenv](https://www.npmjs.com/package/dotenv)
@@ -108,9 +110,11 @@ ___
 * [Mongoose](http://mongoosejs.com/index.html)
   * [Schemas](https://mongoosejs.com/docs/guide.html)
   * [Queries](https://mongoosejs.com/docs/queries.html)
+  * [Saving Documents](https://mongoosejs.com/docs/documents.html#updating-using-save)
   * [Validation](https://mongoosejs.com/docs/validation.html)
   * [Unique Validator](https://github.com/blakehaswell/mongoose-unique-validator)
   * [insertMany](https://mongoosejs.com/docs/api.html#model_Model.insertMany)
+  * [Project Fields to Return from Query](https://docs.mongodb.com/manual/tutorial/project-fields-from-query-results/#return-the-specified-fields-and-the-id-field-only)
 
 ##### Lint
 * [Lint](https://en.wikipedia.org/wiki/Lint_(software))
@@ -132,9 +136,25 @@ ___
   * [toContain](https://jestjs.io/docs/expect#tocontainitem)
   * [toBeDefined](https://jestjs.io/docs/expect#tobedefined)
 * [supertest - npm](https://github.com/visionmedia/supertest) 
+  * [setting headers](https://github.com/visionmedia/supertest/issues/398)
 
 ##### Lodash
 * [Lodash](https://lodash.com)
 
 ##### RegEx
 * [RegEx - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+
+##### Authentication
+* [Hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+* [bcrypt](https://github.com/kelektiv/node.bcrypt.js)
+  * [Salt rounds](https://github.com/kelektiv/node.bcrypt.js/#a-note-on-rounds)
+* [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
+* [Token Based Authentication](https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication#toc-how-token-based-works)
+* [Anatomy of a JSON Web Token](https://scotch.io/tutorials/the-anatomy-of-a-json-web-token)
+* [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
+* [Authorization Header - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization)
+* [Authorization Schemes - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication#authentication_schemes)
+* [Redis](https://redis.io)
+* [https - Node.js](https://nodejs.org/api/https.html))
+* [How to create an https server? - Node.js](https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTPS-server/)
+* [Using HTTPS for local development](https://blog.bitsrc.io/using-https-for-local-development-for-react-angular-and-node-fdfaf69693cd)

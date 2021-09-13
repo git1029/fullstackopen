@@ -6,7 +6,53 @@ POST http://localhost:3003/api/blogs
 Content-Type: application/json
 
 {
-  "author": "Arno Vainune",
-  "url": "http://localhost:3003/api/blogs",
-  "votes": 2
+  "title": "C# is cool",
+  "author": "Bob Smith",
+  "url": "http://localhost:3003/api/blogs"
+}
+
+### Crete user
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "root",
+  "name": "Superuser",
+  "password": "password"
+}
+
+### Delete user
+DELETE http://localhost:3003/api/users/613f310f151c43516631307f
+
+### Create blog post with user token
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+# Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYxM2YzZTY2NWY0MzFjNTFiYWEzNTk4OSIsImlhdCI6MTYzMTU0MzAwMn0.QZY-e8WmEeTl6-5ZPUqwh5sLvgo_HO3QQOPZtj788wA
+
+{
+  "title": "Test blog 4",
+  "author": "root",
+  "url": "http://localhost:3003"
+}
+
+### Login
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "root",
+  "password": "password"
+}
+
+### Delete blog
+DELETE http://localhost:3003/api/blogs/613f5954ab1a81f45ee08ed6
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYxM2YzZTY2NWY0MzFjNTFiYWEzNTk4OSIsImlhdCI6MTYzMTU0MzAwMn0.QZY-e8WmEeTl6-5ZPUqwh5sLvgo_HO3QQOPZtj788wA
+
+### Update blog
+PUT http://localhost:3003/api/blogs/613f7343bbe0090a26ee33ce
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYxM2YzZTY2NWY0MzFjNTFiYWEzNTk4OSIsImlhdCI6MTYzMTU0MzAwMn0.QZY-e8WmEeTl6-5ZPUqwh5sLvgo_HO3QQOPZtj788wA
+
+{
+  "likes": 999
 }
