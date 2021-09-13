@@ -2,7 +2,7 @@ const blogsRouter = require('express').Router()
 const userExtractor = require('../utils/middleware').userExtractor
 const Blog = require('../models/blog')
 const User = require('../models/user')
-const AuthenticationError = require('../utils/error').AuthenticationError
+const ForbiddenError = require('../utils/error').ForbiddenError
 
 blogsRouter.get('/', async (_request, response) => {
   const blogs = await Blog
@@ -28,7 +28,7 @@ blogsRouter.post('/', userExtractor, async (request, response) => {
 
   const user = await User.findById(request.user)
   if (!user) {
-    throw new AuthenticationError('unknown user')
+    throw new ForbiddenError('unknown user')
   }
 
   const blog = new Blog({
@@ -55,7 +55,7 @@ blogsRouter.post('/', userExtractor, async (request, response) => {
 blogsRouter.delete('/:id', userExtractor, async (request, response) => {
   const user = await User.findById(request.user)
   if (!user) {
-    throw new AuthenticationError('unknown user')
+    throw new ForbiddenError('unknown user')
   }
 
   const blogToDelete = await Blog.findById(request.params.id)
@@ -64,7 +64,7 @@ blogsRouter.delete('/:id', userExtractor, async (request, response) => {
   }
 
   if (!(blogToDelete.user.toString() === user._id.toString())) {
-    throw new AuthenticationError(
+    throw new ForbiddenError(
       'you are not permitted to delete another users blog'
     )
   }
@@ -76,7 +76,7 @@ blogsRouter.delete('/:id', userExtractor, async (request, response) => {
 blogsRouter.put('/:id', userExtractor, async (request, response) => {
   const user = await User.findById(request.user)
   if (!user) {
-    throw new AuthenticationError('unknown user')
+    throw new ForbiddenError('unknown user')
   }
 
   // NB: findByIdAndUpdate receives a regular JS object as parameter
@@ -91,7 +91,7 @@ blogsRouter.put('/:id', userExtractor, async (request, response) => {
   }
 
   if (!(blogToUpdate.user.toString() === user._id.toString())) {
-    throw new AuthenticationError(
+    throw new ForbiddenError(
       'you are not permitted to modify another users blog'
     )
   }

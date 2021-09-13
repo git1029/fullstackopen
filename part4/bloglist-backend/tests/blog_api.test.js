@@ -159,7 +159,7 @@ describe('addition of a new blog', () => {
     expect(result.body.error).toContain('invalid token')
   })
 
-  test('fails with status code 401 if unknown user', async () => {
+  test('fails with status code 403 if unknown user', async () => {
     const newBlog = {
       title: 'async/await simplifies making async calls',
       author: 'Bob Smith',
@@ -181,7 +181,7 @@ describe('addition of a new blog', () => {
       .post('/api/blogs')
       .set('Authorization', `bearer ${token}`)
       .send(newBlog)
-      .expect(401)
+      .expect(403)
 
     expect(result.body.error).toContain('unknown user')
   })
@@ -240,7 +240,7 @@ describe('deletion of a blog', () => {
       .expect(400)
   })
 
-  test('fails with statuscode 401 if blog does not belong to user', async () => {
+  test('fails with statuscode 403 if blog does not belong to user', async () => {
     const blogsAtStart = await helper.blogsInDb()
     const blogToDelete = blogsAtStart[0]
 
@@ -258,7 +258,7 @@ describe('deletion of a blog', () => {
     const result = await api
       .delete(`/api/blogs/${blogToDelete.id}`)
       .set('Authorization', `bearer ${login.body.token}`)
-      .expect(401)
+      .expect(403)
 
     expect(result.body.error).toContain(
       'not permitted to delete another users blog'
@@ -340,7 +340,7 @@ describe('updating a blog', () => {
       .expect(400)
   })
 
-  test('fails with statuscode 401 if blog does not belong to user', async () => {
+  test('fails with statuscode 403 if blog does not belong to user', async () => {
     const blogsAtStart = await helper.blogsInDb()
     const blogToUpdate = blogsAtStart[0]
 
@@ -363,7 +363,7 @@ describe('updating a blog', () => {
       .put(`/api/blogs/${blogToUpdate.id}`)
       .set('Authorization', `bearer ${login.body.token}`)
       .send(updatedBlog)
-      .expect(401)
+      .expect(403)
 
     expect(result.body.error).toContain(
       'not permitted to modify another users blog'

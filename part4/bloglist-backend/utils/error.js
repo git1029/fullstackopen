@@ -10,7 +10,14 @@ function AuthenticationError(message) {
   this.message = message
 }
 
+// Error constructor to handle custom forbidden errors
+function ForbiddenError(message) {
+  this.name = 'ForbiddenError',
+  this.message = message
+}
+
 module.exports = {
   ValidationError,
-  AuthenticationError
+  AuthenticationError,
+  ForbiddenError
 }

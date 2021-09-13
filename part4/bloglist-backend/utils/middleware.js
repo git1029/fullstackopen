@@ -47,6 +47,9 @@ const errorHandler = (error, _request, response, next) => {
   else if (error.name === 'AuthenticationError') {
     return response.status(401).json({ error: error.message })
   }
+  else if (error.name === 'ForbiddenError') {
+    return response.status(403).json({ error: error.message })
+  }
   else if (error.name === 'JsonWebTokenError') {
     return response.status(401).json({ error: 'invalid token' })
   }
