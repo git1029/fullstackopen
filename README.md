@@ -40,9 +40,13 @@ ___
 * [Reduce basics](https://www.youtube.com/watch?v=Wl98eZpkp-c)
 * [Reduce advanced](https://www.youtube.com/watch?v=1DMolJ2FrNY)
 
-##### Keys
-* [Keys - React Docs](https://reactjs.org/docs/reconciliation.html#recursing-on-children)
-* [Index as key is an anti-pattern](https://robinpokorny.medium.com/index-as-a-key-is-an-anti-pattern-e0349aece318)
+##### React
+* [React Docs](https://reactjs.org/docs/getting-started.html)
+  * [conditional rendering](https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator)
+  * [Keys - React Docs](https://reactjs.org/docs/reconciliation.html#recursing-on-children)
+    * [Index as key is an anti-pattern](https://robinpokorny.medium.com/index-as-a-key-is-an-anti-pattern-e0349aece318)
+  * [Conditionally firing an effect - React Docs](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect)
+
 
 ##### Runtime Event loop
 * [Concurrency model and the event loop - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
@@ -52,9 +56,6 @@ ___
 
 ##### json-server
 * [json-server - Github](https://github.com/typicode/json-server#getting-started)
-
-##### Effect Hooks
-* [Conditionally firing an effect - React Docs](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect)
 
 ##### REST
 * [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
@@ -80,6 +81,8 @@ ___
 * [Node.js](https://nodejs.org/en/)
   * [http](https://nodejs.org/docs/latest-v8.x/api/http.html)
   * [https](https://nodejs.org/api/https.html)
+    * [How to create an https server? - Node.js](https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTPS-server/)
+    * [Using HTTPS for local development](https://blog.bitsrc.io/using-https-for-local-development-for-react-angular-and-node-fdfaf69693cd)
   * [process.argv](https://nodejs.org/docs/latest-v8.x/api/process.html#process_process_argv)
 * [nodemon](https://github.com/remy/nodemon)
 * [dotenv](https://www.npmjs.com/package/dotenv)
@@ -155,6 +158,11 @@ ___
 * [Authorization Header - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization)
 * [Authorization Schemes - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication#authentication_schemes)
 * [Redis](https://redis.io)
-* [https - Node.js](https://nodejs.org/api/https.html))
-* [How to create an https server? - Node.js](https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTPS-server/)
-* [Using HTTPS for local development](https://blog.bitsrc.io/using-https-for-local-development-for-react-angular-and-node-fdfaf69693cd)
+* [localStorage - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Storage)
+* [HTTP Cookies - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#restrict_access_to_cookies)
+* [Cross Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
+  * [XSS - What are Cross-Site Scripting Attacks?](https://academind.com/tutorials/xss-cross-site-scripting-attacks)
+  * [XSS - localStorage vs Cookies](https://academind.com/tutorials/localstorage-vs-cookies-xss)
+  * [DOM based XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+  * [React sanitisation](https://reactjs.org/docs/introducing-jsx.html#jsx-prevents-injection-attacks)
+  * [sanitize-html - npm](https://www.npmjs.com/package/sanitize-html)
