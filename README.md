@@ -46,7 +46,10 @@ ___
   * [Keys - React Docs](https://reactjs.org/docs/reconciliation.html#recursing-on-children)
     * [Index as key is an anti-pattern](https://robinpokorny.medium.com/index-as-a-key-is-an-anti-pattern-e0349aece318)
   * [Conditionally firing an effect - React Docs](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect)
-
+* [Lifiting state up](https://reactjs.org/docs/lifting-state-up.html)
+* [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
+  * [useRef](https://reactjs.org/docs/hooks-reference.html#useref)
+* [prop-types](https://github.com/facebook/prop-types)
 
 ##### Runtime Event loop
 * [Concurrency model and the event loop - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
@@ -124,6 +127,7 @@ ___
 * [ESLint](https://eslint.org)
   * [ESLint plugin - VSC](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   * [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+  * [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest)
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 ##### Testing
@@ -154,6 +158,7 @@ ___
 * [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
 * [Token Based Authentication](https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication#toc-how-token-based-works)
 * [Anatomy of a JSON Web Token](https://scotch.io/tutorials/the-anatomy-of-a-json-web-token)
+* [Best practices of using JWT](https://hasura.io/blog/best-practices-of-using-jwt-with-graphql/#silent_refresh)
 * [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken)
 * [Authorization Header - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization)
 * [Authorization Schemes - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication#authentication_schemes)

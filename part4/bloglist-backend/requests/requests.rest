@@ -49,10 +49,10 @@ DELETE http://localhost:3003/api/blogs/613f5954ab1a81f45ee08ed6
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYxM2YzZTY2NWY0MzFjNTFiYWEzNTk4OSIsImlhdCI6MTYzMTU0MzAwMn0.QZY-e8WmEeTl6-5ZPUqwh5sLvgo_HO3QQOPZtj788wA
 
 ### Update blog
-PUT http://localhost:3003/api/blogs/613f7343bbe0090a26ee33ce
+PUT http://localhost:3003/api/blogs/613f40045819290ca93984b2
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYxM2YzZTY2NWY0MzFjNTFiYWEzNTk4OSIsImlhdCI6MTYzMTU0MzAwMn0.QZY-e8WmEeTl6-5ZPUqwh5sLvgo_HO3QQOPZtj788wA
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYxM2YzZTY2NWY0MzFjNTFiYWEzNTk4OSIsImlhdCI6MTYzMTgyNDk2NiwiZXhwIjoxNjMxODI4NTY2fQ.Yfac5tUisJQGrBy_5yAsj6Muw6BDoTs9t3CIBozAe4U
 
 {
-  "likes": 999
+  "likes": 44
 }

@@ -79,25 +79,42 @@ blogsRouter.put('/:id', userExtractor, async (request, response) => {
     throw new ForbiddenError('unknown user')
   }
 
-  // NB: findByIdAndUpdate receives a regular JS object as parameter
-  // here we are only allowing update to blog likes
-  const blog = {
-    likes: request.body.likes
-  }
-
   const blogToUpdate = await Blog.findById(request.params.id)
   if (!blogToUpdate) {
     return response.status(404).end()
   }
 
+  // PUT requests replace an entire resource, therefore should ideally
+  // send copy of original resource with individual parameters updated,
+  // not simply a subset, despite MongoDB/Mongoose findByIdAndUpdate
+  // methods accepting a partial update, which are more aligned with HTTP PATCH requests
+  // https://wanago.io/2020/04/27/typescript-express-put-vs-patch-mongodb-mongoose/
+  // NB: findByIdAndUpdate receives a regular JS object as parameter
+  // here we are only allowing update to blog likes
+  // const blog = {
+  //   likes: request.body.likes
+  // }
+  const body = request.body
+  const blog = {
+    title: body.title || blogToUpdate.title,
+    author: body.author || blogToUpdate.author,
+    url: body.url || blogToUpdate.url,
+    likes: body.likes || blogToUpdate.likes,
+  }
+
+  // Limit changing title/author/url to original user
   if (!(blogToUpdate.user.toString() === user._id.toString())) {
-    throw new ForbiddenError(
-      'you are not permitted to modify another users blog'
-    )
+    if (!(Object.keys(body).length === 1 && body.likes !== undefined)) {
+      throw new ForbiddenError(
+        'you are not permitted to modify another users blog'
+      )
+    }
   }
 
   const updatedBlog = await Blog
     .findByIdAndUpdate(request.params.id, blog, { new: true })
+    .populate('user', { username: 1, name: 1 })
+
   response.json(updatedBlog)
 })
 

@@ -21,8 +21,6 @@ const userSchema = new mongoose.Schema({
   ]
 })
 
-// mongoose.set('debug', true)
-
 // Custom validator to check for username uniqueness
 // NB: mongoose-unique-validator requires mongoose < v6
 // NB: this will be called using save()
