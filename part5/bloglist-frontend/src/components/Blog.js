@@ -44,7 +44,7 @@ const Blog = ({ blog, handleLike, handleDelete, user }) => {
   }
 
   const details = () => (
-    <div>
+    <div className='blogDetails'>
       <div>{blog.url}</div>
       <div>
         likes {blog.likes}

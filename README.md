@@ -142,8 +142,18 @@ ___
   * [afterAll](https://jestjs.io/docs/api#afterallfn-timeout)
   * [toContain](https://jestjs.io/docs/expect#tocontainitem)
   * [toBeDefined](https://jestjs.io/docs/expect#tobedefined)
+  * [mock](https://jestjs.io/docs/mock-functions)
 * [supertest - npm](https://github.com/visionmedia/supertest) 
   * [setting headers](https://github.com/visionmedia/supertest/issues/398)
+* [react-testing-library](https://github.com/testing-library/react-testing-library)
+  * [render](https://testing-library.com/docs/react-testing-library/api#render)
+  * [properties](https://testing-library.com/docs/react-testing-library/api#render-result)
+  * [queries](https://testing-library.com/docs/queries/about/)
+  * [watchman](https://facebook.github.io/watchman/)
+  * [jest-dom](https://github.com/testing-library/jest-dom)
+* [Organising Tests in Jest](https://medium.com/@JeffLombardJr/organizing-tests-in-jest-17fc431ff850)
+* [Snapshot Testing](https://jestjs.io/docs/snapshot-testing)
+* [Mock Objects](https://en.wikipedia.org/wiki/Mock_object)
 
 ##### Lodash
 * [Lodash](https://lodash.com)
